@@ -22,20 +22,20 @@ while player is False:
         if computer == "Paper":
             # computer won
             print("You lose", computer, "covers", player)
-    else:
-        print("You win!", player, "smahes", computer)
+        else:
+            print("You win!", player, "smahes", computer)
 
     elif player == "Paper":
         if computer == "Scissors":
             print("You lose", computer, "cuts", player)
-    else:
-        print("You win!", player, "covers", computer)
+        else:
+            print("You win!", player, "covers", computer)
 
     elif player == "Scissors":
         if computer == "Rock":
             print("You lose", computer, "smashes", player)
-    else:
-        print("You win!", player, "cuts", computer)
+        else:
+            print("You win!", player, "cuts", computer)
 
     elif player == "Quit":
         exit()
