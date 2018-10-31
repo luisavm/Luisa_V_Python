@@ -3,7 +3,7 @@
 #### Pick your weapon and play against the computer
 -you will only get a vertual sting if you lose!
 
-Prequisities: All you need is [Python](https://www.python.org/download/release/3.0)  to play.
+Prequisities: All you need is [Python](https://www.python.org/download/release/3.0) to play.
 
 Clone the project, nagivate to the directory - <code> cd directoryname </code> - and run the game.py file in a Python3 Terminal
 window for Mac/Linux.
@@ -17,6 +17,6 @@ Choose your weapon wisely!
 
 The computer chooses first; just follow the prompts.
 
-Built with Python 3.
+Built with [Python 3](https://www.python.org/download/release/3.0)
 
 Enjoy!
