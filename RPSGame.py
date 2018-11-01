@@ -43,5 +43,5 @@ while player is False:
     else:
         print("Not a valid option. Check again, and check your spelling!\n")
 
-player = False
-computer = choices[randint(0, 2)]
+    player = False
+    computer = choices[randint(0, 2)]
