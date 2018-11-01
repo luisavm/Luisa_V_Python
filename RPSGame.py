@@ -4,44 +4,57 @@ from random import randint
 choices = ["Rock", "Paper", "Scissors"]
 player = False
 
-# make the computer pick one item at random
+computer_lives = 3
+player_lives = 3
+
+# computer randomly select option
 computer = choices[randint(0, 2)]
 
-# show the computer's choice in the terminal window
-print("computer choose: ", computer)
+# player randomly select option for weapones
+player = choices[randint(0, 2)]
 
-while player is False:
-    print("Choose your weapon!\n")
-    player = input("Rock, Paper or Scissors?\n")
-    print("Player chooses:", player)
-
-    if (player == computer):
+# Tie: no one wins NAHHHH
+if (player == computer):
         print("Tie! Live to shoot another day")
 
-    elif player == "Rock":
+elif player == "Rock":
         if computer == "Paper":
-            # computer won
+            # if computer chooses paper, player plays rock
+            # the computer will win, player will lose
+            player_lives == player_lives
             print("You lose", computer, "covers", player)
         else:
-            print("You win!", player, "smahes", computer)
+            # player wins, computer will lose
+            computer_lives == computer_lives
+            print("You win!", player, "smashes", computer)
 
-    elif player == "Paper":
+elif player == "Paper":
         if computer == "Scissors":
+            # if computer responds with scissors, player chooses paper
+            # the computer will win, player will lose
+            player_lives == player_lives
             print("You lose", computer, "cuts", player)
         else:
+            # player wins, computer will lose
+            computer_lives == computer_lives
             print("You win!", player, "covers", computer)
 
-    elif player == "Scissors":
+elif player == "Scissors":
         if computer == "Rock":
+            # if computer chooses rock, player responds with scissors
+            # the computer will win, player will lose
+            player_lives == player_lives
             print("You lose", computer, "smashes", player)
         else:
+            # player wins, computer will lose
+            computer_lives == computer_lives
             print("You win!", player, "cuts", computer)
 
-    elif player == "Quit":
+elif player == "Quit":
         exit()
 
-    else:
+else:
         print("Not a valid option. Check again, and check your spelling!\n")
 
-    player = False
-    computer = choices[randint(0, 2)]
+        player = False
+        computer = choices[randint(0, 2)]
